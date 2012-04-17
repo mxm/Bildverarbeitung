@@ -1,0 +1,35 @@
+#********************************************************************************
+#Aufgabe 3
+#********************************************************************************
+source ub1.m;
+
+# Lesen des Bilds
+#********************************************************************************
+B = imread("lena-bw.png");
+
+# I) normalisieren, transformieren mit Hadamard, rausschreiben nach "Bfreq.png"
+#********************************************************************************
+B_norm = normalizePicture(B);
+
+B_freq = h512 * B_norm * h512;
+
+imwrite(B_freq, "Bfreq.png")
+
+
+# II) rücktransformieren, auf den Bereich 0..255 skalieren, schrebien nach "Bback.png"
+#********************************************************************************
+B_back = h512 * B_freq * h512;
+
+B_back_den = denormalizeToPicture(B_back);
+
+imwrite(B_back_den, "Bback.png")
+
+
+
+# spaßershalber ein Tiefpassfilter nach "Blow.png"
+#********************************************************************************
+B_low = h512 * lowpass(B_freq, 0) * h512;
+
+B_low_den = denormalizeToPicture(B_low);
+
+imwrite(B_low_den, "Blow.png")
