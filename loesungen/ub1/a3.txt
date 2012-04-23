@@ -24,6 +24,7 @@ B_back_den = denormalizeToPicture(B_back);
 
 imwrite(B_back_den, "Bback.png")
 
+# Das rücktransformierte Bild gleicht dem Original!
 
 
 # spaßershalber ein Tiefpassfilter nach "Blow.png"
