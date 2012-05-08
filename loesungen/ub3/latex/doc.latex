@@ -1,0 +1,247 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,vmargin={20mm,20mm},hmargin={30mm,25mm}]{geometry}
+
+\usepackage{graphicx}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{subfig}
+
+\begin{document}
+
+
+\parindent 0em%
+\parskip 0.5em%
+\noindent\rule{\textwidth}{1pt}%
+\begin{center}%
+\textbf{Bildverarbeitung SoSe 2012} \\
+\textbf{Übung 3}
+\end{center}%
+{Max Michels, Sebastian Kürten}\\%
+\noindent\rule{\textwidth}{1pt}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Aufgabe 1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% a
+\subsection{a}
+
+\begin{tabular}{|l|l|l|}\hline
+n & Real & Imaginär \\\hline\hline
+1 & 1 & 0 \\\hline
+2 & 1, -1 & 0, 0 \\\hline
+
+3 & 
+1,
+$sin(\frac{2\pi}{3})$,
+$sin(2\frac{2\pi}{3})$
+&
+0,
+$cos(\frac{2\pi}{3})$,
+$cos(2\frac{2\pi}{3})$
+\\\hline
+
+4 & 1, 0, -1, 0 & 0, 1, 0, -1 \\\hline
+
+5 & 
+1,
+$sin(\frac{2\pi}{5})$,
+$sin(2\frac{2\pi}{5})$,
+$sin(3\frac{2\pi}{5})$,
+$sin(4\frac{2\pi}{5})$
+&
+0,
+$cos(\frac{2}{5}\pi)$,
+$cos(2\frac{2}{5}\pi)$,
+$cos(3\frac{2}{5}\pi)$,
+$cos(4\frac{2}{5}\pi)$
+\\\hline
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% b
+\subsection{b}
+
+Die Einheitswurzel ist so definiert:
+
+$$
+\omega_n^k = e^{i \cdot 2 \cdot \pi \frac{k}{n}}
+$$
+
+somit gilt:
+
+$$
+\omega_{n/2}^{k/2} 
+= e^{i \cdot 2 \cdot \pi \frac{k/2}{n/2}}
+= e^{i \cdot 2 \cdot \pi \frac{k}{n}}
+= \omega_{n}^{k} 
+$$
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\newcommand{\lyxdot}{.}
+\section{Aufgabe 2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% a
+\subsection{a}
+
+Siehe Anhang (bzw. Datei "a2.m")
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% b
+\subsection{b}
+
+Siehe Abbildungen 1 bis 4.
+
+Die verschiedenen Darstellungsweisen des Sprektrums weisen kaum Ähnlichkeit mit dem Originalbild auf. Teilweise sind noch die Formen des Originalbildes schemenhaft erkennbar. Außerdem gibt es teilweise zwischen den Spektralbildern auffällige Ähnlichkeiten, wie z.B. zwischen denen von Square 1 und Square 2 (die bilder von Square 2 scheinen feiner als die von Square 1), oder auch zwischen Square2, Länge und Square 3, Länge.
+
+\begin{figure}[h]
+\subfloat[original]{\includegraphics[width=0.2\textwidth]{../square/square1}}
+\subfloat[angle]{\includegraphics[width=0.2\textwidth]{../square/square1\lyxdot angle}}
+\subfloat[length]{\includegraphics[width=0.2\textwidth]{../square/square1\lyxdot length}}
+\subfloat[real]{\includegraphics[width=0.2\textwidth]{../square/square1\lyxdot real}}
+\subfloat[image]{\includegraphics[width=0.2\textwidth]{../square/square1\lyxdot image}}
+\caption{Square1}
+\end{figure}
+
+\begin{figure}[h]
+\subfloat[original]{\includegraphics[width=0.2\textwidth]{../square/square2}}
+\subfloat[angle]{\includegraphics[width=0.2\textwidth]{../square/square2\lyxdot angle}}
+\subfloat[length]{\includegraphics[width=0.2\textwidth]{../square/square2\lyxdot length}}
+\subfloat[real]{\includegraphics[width=0.2\textwidth]{../square/square2\lyxdot real}}
+\subfloat[image]{\includegraphics[width=0.2\textwidth]{../square/square2\lyxdot image}}
+\caption{Square2}
+\end{figure}
+
+\begin{figure}[h]
+\subfloat[original]{\includegraphics[width=0.2\textwidth]{../square/square3}}
+\subfloat[angle]{\includegraphics[width=0.2\textwidth]{../square/square3\lyxdot angle}}
+\subfloat[length]{\includegraphics[width=0.2\textwidth]{../square/square3\lyxdot length}}
+\subfloat[real]{\includegraphics[width=0.2\textwidth]{../square/square3\lyxdot real}}
+\subfloat[image]{\includegraphics[width=0.2\textwidth]{../square/square3\lyxdot image}}
+\caption{Square3}
+\end{figure}
+
+\begin{figure}[h]
+\subfloat[original]{\includegraphics[width=0.2\textwidth]{../square/square4}}
+\subfloat[angle]{\includegraphics[width=0.2\textwidth]{../square/square4\lyxdot angle}}
+\subfloat[length]{\includegraphics[width=0.2\textwidth]{../square/square4\lyxdot length}}
+\subfloat[real]{\includegraphics[width=0.2\textwidth]{../square/square4\lyxdot real}}
+\subfloat[image]{\includegraphics[width=0.2\textwidth]{../square/square4\lyxdot image}}
+\caption{Square4}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% c
+\subsection{c}
+
+Siehe Anhang (bzw. Datei "a2.m"). Die Bilder sind exakt gleich.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% d
+
+\newpage
+\subsection{d}
+Siehe Abbildungen 5 bis 8.
+
+Es wurden nach den Kriterien Länge, Winkel, Imaginärteil und Realteil jeweils der
+p-te Anteil der Werte abgeschnitten. Dabei wurden die kleinsten Werte entfernt.
+Die jeweilige Bildunterschrift gibt an, welches p verwendet wurde.
+Es lassen je nach Auswahlkriterium tolle Artefakte erkennen.
+
+
+\begin{figure}[h]
+\subfloat[0.000100]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot000100}}
+\subfloat[0.001000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot001000}}
+\subfloat[0.010000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot010000}}
+\subfloat[0.100000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot100000}}
+\subfloat[0.200000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot200000}}
+\\
+\subfloat[0.300000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot300000}}
+\subfloat[0.400000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot400000}}
+\subfloat[0.500000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot500000}}
+\subfloat[0.600000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot600000}}
+\subfloat[0.700000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot700000}}
+\\
+\subfloat[0.800000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot800000}}
+\subfloat[0.900000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot900000}}
+\subfloat[0.990000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot990000}}
+\subfloat[0.999000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot999000}}
+\subfloat[0.999900]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-abs-0\lyxdot999900}}
+\\
+\caption{Länge}
+\end{figure}
+
+\begin{figure}[h]
+\subfloat[0.000100]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot000100}}
+\subfloat[0.001000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot001000}}
+\subfloat[0.010000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot010000}}
+\subfloat[0.100000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot100000}}
+\subfloat[0.200000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot200000}}
+\\
+\subfloat[0.300000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot300000}}
+\subfloat[0.400000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot400000}}
+\subfloat[0.500000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot500000}}
+\subfloat[0.600000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot600000}}
+\subfloat[0.700000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot700000}}
+\\
+\subfloat[0.800000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot800000}}
+\subfloat[0.900000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot900000}}
+\subfloat[0.990000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot990000}}
+\subfloat[0.999000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot999000}}
+\subfloat[0.999900]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-angle-0\lyxdot999900}}
+\\
+\caption{Winkel}
+\end{figure}
+
+\begin{figure}[h]
+\subfloat[0.000100]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot000100}}
+\subfloat[0.001000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot001000}}
+\subfloat[0.010000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot010000}}
+\subfloat[0.100000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot100000}}
+\subfloat[0.200000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot200000}}
+\\
+\subfloat[0.300000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot300000}}
+\subfloat[0.400000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot400000}}
+\subfloat[0.500000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot500000}}
+\subfloat[0.600000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot600000}}
+\subfloat[0.700000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot700000}}
+\\
+\subfloat[0.800000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot800000}}
+\subfloat[0.900000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot900000}}
+\subfloat[0.990000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot990000}}
+\subfloat[0.999000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot999000}}
+\subfloat[0.999900]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-imag-0\lyxdot999900}}
+\\
+\caption{Imaginärteil}
+\end{figure}
+
+\begin{figure}[h]
+\subfloat[0.000100]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot000100}}
+\subfloat[0.001000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot001000}}
+\subfloat[0.010000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot010000}}
+\subfloat[0.100000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot100000}}
+\subfloat[0.200000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot200000}}
+\\
+\subfloat[0.300000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot300000}}
+\subfloat[0.400000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot400000}}
+\subfloat[0.500000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot500000}}
+\subfloat[0.600000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot600000}}
+\subfloat[0.700000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot700000}}
+\\
+\subfloat[0.800000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot800000}}
+\subfloat[0.900000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot900000}}
+\subfloat[0.990000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot990000}}
+\subfloat[0.999000]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot999000}}
+\subfloat[0.999900]{\includegraphics[width=0.19\textwidth]{../lena/lena-low-real-0\lyxdot999900}}
+\\
+\caption{Realteil}
+\end{figure}
+
+
+\end{document}

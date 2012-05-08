@@ -52,7 +52,7 @@ LENA3 = imread("lena-bw-lc3.bmp");
 %axis([1,256,0,1]);
 %print("relcum3.png");
 
-imwrite(histAusgleich(LENA1), "ausgeglichen1.png");
-imwrite(histAusgleich(LENA2), "ausgeglichen2.png");
-imwrite(histAusgleich(LENA3), "ausgeglichen3.png");
+%imwrite(histAusgleich(LENA1), "ausgeglichen1.png");
+%imwrite(histAusgleich(LENA2), "ausgeglichen2.png");
+%imwrite(histAusgleich(LENA3), "ausgeglichen3.png");
 

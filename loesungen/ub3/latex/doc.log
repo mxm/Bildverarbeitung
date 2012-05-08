@@ -1,0 +1,680 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.9.10)  30 APR 2012 21:27
+entering extended mode
+ %&-line parsing enabled.
+**doc.latex
+(./doc.latex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, ngerman, german, german-x-2009-06-19, ngerman-x-2009-06-19, loaded.
+
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@dimlist=\toks15
+
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+(/usr/share/texmf-texlive/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(/usr/share/texmf-texlive/tex/latex/ucs/ucs.sty
+Package: ucs 2004/10/17 UCS: Unicode input support
+
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2004/10/17 UCS: Unicode global data
+)
+\uc@secondtry=\count91
+\uc@combtoks=\toks18
+\uc@combtoksb=\toks19
+\uc@temptokena=\toks20
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks21
+\ex@=\dimen109
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen110
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen111
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks22
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks23
+\eqnshift@=\dimen112
+\alignsep@=\dimen113
+\tagshift@=\dimen114
+\tagwidth@=\dimen115
+\totwidth@=\dimen116
+\lineht@=\dimen117
+\@envbody=\toks24
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+\captionmargin=\dimen118
+\captionmargin@=\dimen119
+\captionwidth=\dimen120
+\caption@indent=\dimen121
+\caption@parindent=\dimen122
+\caption@hangindent=\dimen123
+)
+\c@ContinuedFloat=\count104
+)
+\c@KVtest=\count105
+\sf@farskip=\skip46
+\sf@captopadj=\dimen124
+\sf@capskip=\skip47
+\sf@nearskip=\skip48
+\c@subfigure=\count106
+\c@subfigure@save=\count107
+\c@lofdepth=\count108
+\c@subtable=\count109
+\c@subtable@save=\count110
+\c@lotdepth=\count111
+\sf@top=\skip49
+\sf@bottom=\skip50
+) (./doc.aux)
+\openout1 = `doc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: --
+asymmetric: --
+h-parts: 85.35826pt, 441.01773pt, 71.13188pt
+v-parts: 56.9055pt, 731.23584pt, 56.9055pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  441.01773pt
+\textheight 731.23584pt
+\oddsidemargin  13.08827pt
+\evensidemargin 13.08827pt
+\topmargin  -52.36449pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 50.0pt
+\marginparsep   10.0pt
+\columnsep  10.0pt
+\skip\footins  10.0pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+(/usr/share/texmf/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count112
+\scratchdimen=\dimen125
+\scratchbox=\box28
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen126
+\MPnumerator=\count116
+\everyMPtoPDFconversion=\toks27
+) (/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
+LaTeX Info: Redefining \subref on input line 9.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<../square/square1.png, id=14, 389.49727pt x 389.49727pt>
+File: ../square/square1.png Graphic file (type png)
+
+<use ../square/square1.png>
+<../square/square1.angle.png, id=15, 513.92pt x 513.92pt>
+File: ../square/square1.angle.png Graphic file (type png)
+
+<use ../square/square1.angle.png>
+<../square/square1.length.png, id=16, 513.92pt x 513.92pt>
+File: ../square/square1.length.png Graphic file (type png)
+
+<use ../square/square1.length.png>
+<../square/square1.real.png, id=17, 513.92pt x 513.92pt>
+File: ../square/square1.real.png Graphic file (type png)
+
+<use ../square/square1.real.png>
+<../square/square1.image.png, id=18, 513.92pt x 513.92pt>
+File: ../square/square1.image.png Graphic file (type png)
+
+<use ../square/square1.image.png>
+<../square/square2.png, id=19, 389.49727pt x 389.49727pt>
+File: ../square/square2.png Graphic file (type png)
+
+<use ../square/square2.png>
+<../square/square2.angle.png, id=20, 513.92pt x 513.92pt>
+File: ../square/square2.angle.png Graphic file (type png)
+
+<use ../square/square2.angle.png>
+<../square/square2.length.png, id=21, 513.92pt x 513.92pt>
+File: ../square/square2.length.png Graphic file (type png)
+
+<use ../square/square2.length.png>
+<../square/square2.real.png, id=22, 513.92pt x 513.92pt>
+File: ../square/square2.real.png Graphic file (type png)
+
+<use ../square/square2.real.png>
+<../square/square2.image.png, id=23, 513.92pt x 513.92pt>
+File: ../square/square2.image.png Graphic file (type png)
+
+<use ../square/square2.image.png>
+<../square/square3.png, id=24, 389.49727pt x 389.49727pt>
+File: ../square/square3.png Graphic file (type png)
+
+<use ../square/square3.png>
+<../square/square3.angle.png, id=25, 513.92pt x 513.92pt>
+File: ../square/square3.angle.png Graphic file (type png)
+
+<use ../square/square3.angle.png>
+<../square/square3.length.png, id=26, 513.92pt x 513.92pt>
+File: ../square/square3.length.png Graphic file (type png)
+
+<use ../square/square3.length.png>
+<../square/square3.real.png, id=27, 513.92pt x 513.92pt>
+File: ../square/square3.real.png Graphic file (type png)
+
+<use ../square/square3.real.png>
+<../square/square3.image.png, id=28, 513.92pt x 513.92pt>
+File: ../square/square3.image.png Graphic file (type png)
+
+<use ../square/square3.image.png>
+<../square/square4.png, id=29, 389.49727pt x 389.49727pt>
+File: ../square/square4.png Graphic file (type png)
+
+<use ../square/square4.png>
+<../square/square4.angle.png, id=30, 513.92pt x 513.92pt>
+File: ../square/square4.angle.png Graphic file (type png)
+
+<use ../square/square4.angle.png>
+<../square/square4.length.png, id=31, 513.92pt x 513.92pt>
+File: ../square/square4.length.png Graphic file (type png)
+
+<use ../square/square4.length.png>
+<../square/square4.real.png, id=32, 513.92pt x 513.92pt>
+File: ../square/square4.real.png Graphic file (type png)
+
+<use ../square/square4.real.png>
+<../square/square4.image.png, id=33, 513.92pt x 513.92pt>
+File: ../square/square4.image.png Graphic file (type png)
+
+<use ../square/square4.image.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <../square/square1.png (PNG copy)> <../square/square1.angle.png (PNG copy)> 
+<../square/square1.length.png (PNG copy)> <../square/square1.real.png (PNG copy
+)> <../square/square1.image.png (PNG copy)> <../square/square2.png (PNG copy)> 
+<../square/square2.angle.png (PNG copy)> <../square/square2.length.png (PNG cop
+y)> <../square/square2.real.png (PNG copy)> <../square/square2.image.png (PNG c
+opy)> <../square/square3.png (PNG copy)> <../square/square3.angle.png (PNG copy
+)> <../square/square3.length.png (PNG copy)> <../square/square3.real.png (PNG c
+opy)> <../square/square3.image.png (PNG copy)>]
+<../lena/lena-low-abs-0.000100.png, id=41, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.000100.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.000100.png>
+<../lena/lena-low-abs-0.001000.png, id=42, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.001000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.001000.png>
+<../lena/lena-low-abs-0.010000.png, id=43, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.010000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.010000.png>
+<../lena/lena-low-abs-0.100000.png, id=44, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.100000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.100000.png>
+<../lena/lena-low-abs-0.200000.png, id=45, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.200000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.200000.png>
+<../lena/lena-low-abs-0.300000.png, id=46, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.300000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.300000.png>
+<../lena/lena-low-abs-0.400000.png, id=47, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.400000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.400000.png>
+<../lena/lena-low-abs-0.500000.png, id=48, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.500000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.500000.png>
+<../lena/lena-low-abs-0.600000.png, id=49, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.600000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.600000.png>
+<../lena/lena-low-abs-0.700000.png, id=50, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.700000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.700000.png>
+<../lena/lena-low-abs-0.800000.png, id=51, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.800000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.800000.png>
+<../lena/lena-low-abs-0.900000.png, id=52, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.900000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.900000.png>
+<../lena/lena-low-abs-0.990000.png, id=53, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.990000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.990000.png>
+<../lena/lena-low-abs-0.999000.png, id=54, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.999000.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.999000.png>
+<../lena/lena-low-abs-0.999900.png, id=55, 513.92pt x 513.92pt>
+File: ../lena/lena-low-abs-0.999900.png Graphic file (type png)
+
+<use ../lena/lena-low-abs-0.999900.png>
+Underfull \hbox (badness 10000) in paragraph at lines 159--177
+
+ []
+
+<../lena/lena-low-angle-0.000100.png, id=56, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.000100.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.000100.png>
+<../lena/lena-low-angle-0.001000.png, id=57, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.001000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.001000.png>
+<../lena/lena-low-angle-0.010000.png, id=58, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.010000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.010000.png>
+<../lena/lena-low-angle-0.100000.png, id=59, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.100000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.100000.png>
+<../lena/lena-low-angle-0.200000.png, id=60, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.200000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.200000.png>
+<../lena/lena-low-angle-0.300000.png, id=61, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.300000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.300000.png>
+<../lena/lena-low-angle-0.400000.png, id=62, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.400000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.400000.png>
+<../lena/lena-low-angle-0.500000.png, id=63, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.500000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.500000.png>
+<../lena/lena-low-angle-0.600000.png, id=64, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.600000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.600000.png>
+<../lena/lena-low-angle-0.700000.png, id=65, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.700000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.700000.png>
+<../lena/lena-low-angle-0.800000.png, id=66, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.800000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.800000.png>
+<../lena/lena-low-angle-0.900000.png, id=67, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.900000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.900000.png>
+<../lena/lena-low-angle-0.990000.png, id=68, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.990000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.990000.png>
+<../lena/lena-low-angle-0.999000.png, id=69, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.999000.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.999000.png>
+<../lena/lena-low-angle-0.999900.png, id=70, 513.92pt x 513.92pt>
+File: ../lena/lena-low-angle-0.999900.png Graphic file (type png)
+
+<use ../lena/lena-low-angle-0.999900.png>
+Underfull \hbox (badness 10000) in paragraph at lines 181--199
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../lena/lena-low-imag-0.000100.png, id=71, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.000100.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.000100.png>
+<../lena/lena-low-imag-0.001000.png, id=72, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.001000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.001000.png>
+<../lena/lena-low-imag-0.010000.png, id=73, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.010000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.010000.png>
+<../lena/lena-low-imag-0.100000.png, id=74, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.100000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.100000.png>
+<../lena/lena-low-imag-0.200000.png, id=75, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.200000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.200000.png>
+<../lena/lena-low-imag-0.300000.png, id=76, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.300000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.300000.png>
+<../lena/lena-low-imag-0.400000.png, id=77, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.400000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.400000.png>
+<../lena/lena-low-imag-0.500000.png, id=78, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.500000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.500000.png>
+<../lena/lena-low-imag-0.600000.png, id=79, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.600000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.600000.png>
+<../lena/lena-low-imag-0.700000.png, id=80, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.700000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.700000.png>
+<../lena/lena-low-imag-0.800000.png, id=81, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.800000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.800000.png>
+<../lena/lena-low-imag-0.900000.png, id=82, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.900000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.900000.png>
+<../lena/lena-low-imag-0.990000.png, id=83, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.990000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.990000.png>
+<../lena/lena-low-imag-0.999000.png, id=84, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.999000.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.999000.png>
+<../lena/lena-low-imag-0.999900.png, id=85, 513.92pt x 513.92pt>
+File: ../lena/lena-low-imag-0.999900.png Graphic file (type png)
+
+<use ../lena/lena-low-imag-0.999900.png>
+Underfull \hbox (badness 10000) in paragraph at lines 203--221
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../lena/lena-low-real-0.000100.png, id=86, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.000100.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.000100.png>
+<../lena/lena-low-real-0.001000.png, id=87, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.001000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.001000.png>
+<../lena/lena-low-real-0.010000.png, id=88, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.010000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.010000.png>
+<../lena/lena-low-real-0.100000.png, id=89, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.100000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.100000.png>
+<../lena/lena-low-real-0.200000.png, id=90, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.200000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.200000.png>
+<../lena/lena-low-real-0.300000.png, id=91, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.300000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.300000.png>
+<../lena/lena-low-real-0.400000.png, id=92, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.400000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.400000.png>
+<../lena/lena-low-real-0.500000.png, id=93, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.500000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.500000.png>
+<../lena/lena-low-real-0.600000.png, id=94, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.600000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.600000.png>
+<../lena/lena-low-real-0.700000.png, id=95, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.700000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.700000.png>
+<../lena/lena-low-real-0.800000.png, id=96, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.800000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.800000.png>
+<../lena/lena-low-real-0.900000.png, id=97, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.900000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.900000.png>
+<../lena/lena-low-real-0.990000.png, id=98, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.990000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.990000.png>
+<../lena/lena-low-real-0.999000.png, id=99, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.999000.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.999000.png>
+<../lena/lena-low-real-0.999900.png, id=100, 513.92pt x 513.92pt>
+File: ../lena/lena-low-real-0.999900.png Graphic file (type png)
+
+<use ../lena/lena-low-real-0.999900.png>
+Underfull \hbox (badness 10000) in paragraph at lines 225--243
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <../square/square4.png (PNG copy)> <../square/square4.angle.png (PNG copy)> 
+<../square/square4.length.png (PNG copy)> <../square/square4.real.png (PNG copy
+)> <../square/square4.image.png (PNG copy)> <../lena/lena-low-abs-0.000100.png 
+(PNG copy)> <../lena/lena-low-abs-0.001000.png (PNG copy)> <../lena/lena-low-ab
+s-0.010000.png (PNG copy)> <../lena/lena-low-abs-0.100000.png (PNG copy)> <../l
+ena/lena-low-abs-0.200000.png (PNG copy)> <../lena/lena-low-abs-0.300000.png (P
+NG copy)> <../lena/lena-low-abs-0.400000.png (PNG copy)> <../lena/lena-low-abs-
+0.500000.png (PNG copy)> <../lena/lena-low-abs-0.600000.png (PNG copy)> <../len
+a/lena-low-abs-0.700000.png (PNG copy)> <../lena/lena-low-abs-0.800000.png (PNG
+ copy)> <../lena/lena-low-abs-0.900000.png (PNG copy)> <../lena/lena-low-abs-0.
+990000.png (PNG copy)> <../lena/lena-low-abs-0.999000.png (PNG copy)> <../lena/
+lena-low-abs-0.999900.png (PNG copy)>] [4 <../lena/lena-low-angle-0.000100.png 
+(PNG copy)> <../lena/lena-low-angle-0.001000.png (PNG copy)> <../lena/lena-low-
+angle-0.010000.png (PNG copy)> <../lena/lena-low-angle-0.100000.png (PNG copy)>
+ <../lena/lena-low-angle-0.200000.png (PNG copy)> <../lena/lena-low-angle-0.300
+000.png (PNG copy)> <../lena/lena-low-angle-0.400000.png (PNG copy)> <../lena/l
+ena-low-angle-0.500000.png (PNG copy)> <../lena/lena-low-angle-0.600000.png (PN
+G copy)> <../lena/lena-low-angle-0.700000.png (PNG copy)> <../lena/lena-low-ang
+le-0.800000.png (PNG copy)> <../lena/lena-low-angle-0.900000.png (PNG copy)> <.
+./lena/lena-low-angle-0.990000.png (PNG copy)> <../lena/lena-low-angle-0.999000
+.png (PNG copy)> <../lena/lena-low-angle-0.999900.png (PNG copy)> <../lena/lena
+-low-imag-0.000100.png (PNG copy)> <../lena/lena-low-imag-0.001000.png (PNG cop
+y)> <../lena/lena-low-imag-0.010000.png (PNG copy)> <../lena/lena-low-imag-0.10
+0000.png (PNG copy)> <../lena/lena-low-imag-0.200000.png (PNG copy)> <../lena/l
+ena-low-imag-0.300000.png (PNG copy)> <../lena/lena-low-imag-0.400000.png (PNG 
+copy)> <../lena/lena-low-imag-0.500000.png (PNG copy)> <../lena/lena-low-imag-0
+.600000.png (PNG copy)> <../lena/lena-low-imag-0.700000.png (PNG copy)> <../len
+a/lena-low-imag-0.800000.png (PNG copy)> <../lena/lena-low-imag-0.900000.png (P
+NG copy)> <../lena/lena-low-imag-0.990000.png (PNG copy)> <../lena/lena-low-ima
+g-0.999000.png (PNG copy)> <../lena/lena-low-imag-0.999900.png (PNG copy)>]
+[5 <../lena/lena-low-real-0.000100.png (PNG copy)> <../lena/lena-low-real-0.001
+000.png (PNG copy)> <../lena/lena-low-real-0.010000.png (PNG copy)> <../lena/le
+na-low-real-0.100000.png (PNG copy)> <../lena/lena-low-real-0.200000.png (PNG c
+opy)> <../lena/lena-low-real-0.300000.png (PNG copy)> <../lena/lena-low-real-0.
+400000.png (PNG copy)> <../lena/lena-low-real-0.500000.png (PNG copy)> <../lena
+/lena-low-real-0.600000.png (PNG copy)> <../lena/lena-low-real-0.700000.png (PN
+G copy)> <../lena/lena-low-real-0.800000.png (PNG copy)> <../lena/lena-low-real
+-0.900000.png (PNG copy)> <../lena/lena-low-real-0.990000.png (PNG copy)> <../l
+ena/lena-low-real-0.999000.png (PNG copy)> <../lena/lena-low-real-0.999900.png 
+(PNG copy)>] (./doc.aux) ) 
+Here is how much of TeX's memory you used:
+ 4136 strings out of 495021
+ 66567 string characters out of 1181035
+ 142486 words of memory out of 3000000
+ 7232 multiletter control sequences out of 15000+50000
+ 8870 words of font info for 32 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 44i,9n,45p,466b,558s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on doc.pdf (5 pages, 10991137 bytes).
+PDF statistics:
+ 142 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
+
