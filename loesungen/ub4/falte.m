@@ -1,4 +1,5 @@
 function B = falte(A, k)
+% apply the convolution operator on a matrix A with the filter k
 	A = int32(A);
 	B = zeros(size(A));
 	Ap = padZero(A);

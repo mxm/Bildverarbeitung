@@ -1,0 +1,3 @@
+Zeit im Ortsraum: 24.3 Sekunden
+Zeit im Frequenzraum mit FFT: 5.9 Sekunden
+Zeit im Frequenzraum mit DFT: 3.4 Sekunden
