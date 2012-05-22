@@ -1,0 +1,126 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,vmargin={20mm,20mm},hmargin={30mm,25mm}]{geometry}
+
+\usepackage{graphicx}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{subfig}
+
+\usepackage{color}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+\begin{document}
+
+
+\parindent 0em%
+\parskip 0.5em%
+\noindent\rule{\textwidth}{1pt}%
+\begin{center}%
+\textbf{Bildverarbeitung SoSe 2012} \\
+\textbf{Übung 4}
+\end{center}%
+{Max Michels, Sebastian Kürten}\\%
+\noindent\rule{\textwidth}{1pt}%
+
+\newcommand{\lyxdot}{.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Aufgabe 1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Aufgabe 2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[h]
+\subfloat[Original]{\includegraphics[width=0.24\textwidth]{../lena-bw}}
+\hspace{\fill}
+\subfloat[Spiegelung 1]{\includegraphics[width=0.24\textwidth]{../a2\lyxdot lena-bw\lyxdot mirror1}}
+\hspace{\fill}
+\subfloat[Spiegelung 2]{\includegraphics[width=0.24\textwidth]{../a2\lyxdot lena-bw\lyxdot mirror2}}
+\hspace{\fill}
+\subfloat[Spektrum]{\includegraphics[width=0.24\textwidth]{../a2\lyxdot lena-bw\lyxdot spektrum}}
+\hspace{\fill}
+\caption{lena-bw.png}
+\end{figure}
+
+\begin{figure}[h]
+\subfloat[Original]{\includegraphics[width=0.24\textwidth]{../skyline-bw}}
+\hspace{\fill}
+\subfloat[Spiegelung 1]{\includegraphics[width=0.24\textwidth]{../a2\lyxdot skyline-bw\lyxdot mirror1}}
+\hspace{\fill}
+\subfloat[Spiegelung 2]{\includegraphics[width=0.24\textwidth]{../a2\lyxdot skyline-bw\lyxdot mirror2}}
+\hspace{\fill}
+\subfloat[Spektrum]{\includegraphics[width=0.24\textwidth]{../a2\lyxdot skyline-bw\lyxdot spektrum}}
+\hspace{\fill}
+\caption{skyline-bw.png}
+\end{figure}
+
+\begin{figure}[h]
+\subfloat[Original]{\includegraphics[width=0.24\textwidth]{../building-bw}}
+\hspace{\fill}
+\subfloat[Spiegelung 1]{\includegraphics[width=0.24\textwidth]{../a2\lyxdot building-bw\lyxdot mirror1}}
+\hspace{\fill}
+\subfloat[Spiegelung 2]{\includegraphics[width=0.24\textwidth]{../a2\lyxdot building-bw\lyxdot mirror2}}
+\hspace{\fill}
+\subfloat[Spektrum]{\includegraphics[width=0.24\textwidth]{../a2\lyxdot building-bw\lyxdot spektrum}}
+\hspace{\fill}
+\caption{building-bw.png}
+\end{figure}
+
+\newpage
+
+Hauptdatei a2.m
+\lstinputlisting{../a2.m}
+
+Ausgabe
+\begin{lstlisting}
+ok =  1
+ok =  1
+ok =  1
+\end{lstlisting}
+
+Hilfsfunktionen
+\lstinputlisting{../kosinusTest.m}
+\lstinputlisting{../ffn.m}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Aufgabe 3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[h]
+\subfloat[real]{\includegraphics[width=0.24\textwidth]{../ausgabe\lyxdot a3\lyxdot a\lyxdot real}}
+\hspace{\fill}
+\subfloat[imag]{\includegraphics[width=0.24\textwidth]{../ausgabe\lyxdot a3\lyxdot a\lyxdot imag}}
+\hspace{\fill}
+\subfloat[abs]{\includegraphics[width=0.24\textwidth]{../ausgabe\lyxdot a3\lyxdot a\lyxdot abs}}
+\hspace{\fill}
+\subfloat[angle]{\includegraphics[width=0.24\textwidth]{../ausgabe\lyxdot a3\lyxdot a\lyxdot angle}}
+\caption{Spektrum}
+\end{figure}
+
+Hauptdatei a3.m
+\lstinputlisting{../a3.m}
+
+Ausgabe
+\lstinputlisting{../a3.output.txt}
+
+Hilfsfunktionen
+\lstinputlisting{../scaleFilter.m}
+\lstinputlisting{../fft2d.m}
+\lstinputlisting{../ifft2d.m}
+\lstinputlisting{../rowFFT.m}
+\lstinputlisting{../colFFT.m}
+\lstinputlisting{../irowFFT.m}
+\lstinputlisting{../icolFFT.m}
+\lstinputlisting{../complicatedRowFFT.m}
+\lstinputlisting{../complicatedColFFT.m}
+
+\end{document}

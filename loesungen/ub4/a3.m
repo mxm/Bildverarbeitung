@@ -33,8 +33,8 @@ tic;
 S1 = fft2d(double(LENA), 32);
 S2 = S1 .* filter;
 R1 = ifft2d(S2, 32);
-tFreq = toc;
-printf("Zeit im Frequenzraum mit FFT: %.1f Sekunden\n", tFreq);
+tFreq1 = toc;
+printf("Zeit im Frequenzraum mit FFT: %.1f Sekunden\n", tFreq1);
 R2 = real(R1) * size(S1, 1);
 imwrite(uint8(R2), "ausgabe.a3.freq.fft.png");
 
@@ -49,8 +49,8 @@ tic;
 S3 = df * double(LENA) * df;
 S4 = S3 .* filter;
 R3 = df * S4 * df;
-tFreq = toc;
-printf("Zeit im Frequenzraum mit DFT: %.1f Sekunden\n", tFreq);
+tFreq2 = toc;
+printf("Zeit im Frequenzraum mit DFT: %.1f Sekunden\n", tFreq2);
 R4 = real(R1) * size(S3, 1);
 imwrite(uint8(R2), "ausgabe.a3.freq.dft.png");
 
