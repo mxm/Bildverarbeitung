@@ -122,5 +122,10 @@ Hilfsfunktionen
 \lstinputlisting{../icolFFT.m}
 \lstinputlisting{../complicatedRowFFT.m}
 \lstinputlisting{../complicatedColFFT.m}
+\lstinputlisting{../ffthelper.m}
 
+\newpage
+Korrektheitstest für die FFT (correct.m):
+\lstinputlisting{../correct.m}
+\lstinputlisting{../nearzero.m}
 \end{document}
