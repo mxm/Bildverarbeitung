@@ -1,0 +1,76 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,vmargin={20mm,20mm},hmargin={30mm,25mm}]{geometry}
+
+\usepackage{graphicx}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{subfig}
+
+\usepackage{color}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+\begin{document}
+
+
+\parindent 0em%
+\parskip 0.5em%
+\noindent\rule{\textwidth}{1pt}%
+\begin{center}%
+\textbf{Bildverarbeitung SoSe 2012} \\
+\textbf{Übung 5}
+\end{center}%
+{Max Michels, Sebastian Kürten}\\%
+\noindent\rule{\textwidth}{1pt}%
+
+\newcommand{\lyxdot}{.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{section}{1}
+\section{Aufgabe 2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\lstinputlisting[caption=Hauptdatei a2.m]{../a2.m}
+
+%%% a %%%
+
+\subsection{Bilineare Interpolation}
+
+Es wurde die bilineare Interpolation für die Vergrößerung um den Faktor zwei
+implementiert. Man kann leicht sehen, dass die Vergrößerung um den Faktor
+vier durch zweifache Anwendung der zweifachen Vergrößerung erreicht werden
+kann. Jedoch kann bei zweifacher Vergrößerung für die letzte Zeile und bei
+vierfacher Vergrößerung für die letzten drei Zeilen nichts berechnet werden.
+
+\newpage
+\lstinputlisting[caption=Bilineare Interpolation: bilinear4.m]
+	{../bilinear4.m}
+
+\lstinputlisting[caption=Bilineare Interpolation: bilinear2.m]
+	{../bilinear2.m}
+
+\subsection{Vergleich mit den Originalbildern}
+Die vergrößerten Bilder sehen auch auf Originalgröße betrachtet sehr gut
+aus. Im Vergleich zum Original sind sie im Detail etwas unscharf und man 
+erkennt beim genauen hinsehen leichte horizontale und vertikale Artefakte.
+
+%%% b %%%
+
+\subsection{Verkleinerung und bilineare Rückinterpolation}
+
+Die Verkleinerung um Faktoren 4 und 16 wurden wie untenstehend implementiert:
+
+%\newpage
+\lstinputlisting[caption=Verkleinerung um Faktor 4: shrink2x2.m]
+	{../shrink2x2.m}
+
+\lstinputlisting[caption=Verkleinerung um Faktor 16: shrink4x4.m]
+	{../shrink4x4.m}
+
+\subsection{Vergleich mit den Originalbildern}
+Die rücktransformierten Bilder sehen deutlich unscharf aus.
+Beim genauen hinsehen erkennt man deutlich horizontale und vertikale 
+Artefakte.
+
+\end{document}
