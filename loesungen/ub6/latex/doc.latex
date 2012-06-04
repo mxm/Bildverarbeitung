@@ -1,0 +1,105 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,vmargin={20mm,20mm},hmargin={30mm,25mm}]{geometry}
+
+\usepackage{graphicx}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{subfig}
+
+\usepackage{color}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+\begin{document}
+
+
+\parindent 0em%
+\parskip 0.5em%
+\noindent\rule{\textwidth}{1pt}%
+\begin{center}%
+\textbf{Bildverarbeitung SoSe 2012} \\
+\textbf{Übung 6}
+\end{center}%
+{Max Michels, Sebastian Kürten}\\%
+\noindent\rule{\textwidth}{1pt}%
+
+\newcommand{\lyxdot}{.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Aufgabe 1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\lstinputlisting[caption=Hauptdatei a1.m]{../a1.m}
+
+%%% a %%%
+
+\subsection{Teil a: Gauß-Pyramide}
+
+Die Gaußpyramide wurde mit einer rekursiven Funktion implementiert, die 
+eine verkettete Liste als Ergebnis aufbaut. Dabei steht in jedem Element
+der Liste im Attribut 'b' das Bild und im Attribut 'next' ein Zeiger auf
+den nächsten Listeneintrag.
+Solange das jeweilige Bild groß genug ist, wird zunächst ein 5x5-Gaußfilter
+per Konvolution auf das Bild angewendet und dieses dann mit einer
+2x2-Mittelwertsreduktion auf die halbe Größe skaliert.
+
+\lstinputlisting[caption=Gauß-Pyramide: gaussPyramide.m]
+	{../gaussPyramide.m}
+
+%%% b %%%
+
+\subsection{Teil b: Laplace-Pyramide}
+
+Die Laplace-Pyramide wurde mit der gleichen Struktur wie die Gauß-Pyramide
+implementiert. Das verkleinerte Bild wird durch duplizeren jeweils eines 
+Pixels auf 3 weitere hochskaliert, um es vom Originalbild abziehen zu können
+und die Differenz zu bilden.
+
+\lstinputlisting[caption=Laplace-Pyramide: laplacePyramide.m]
+	{../laplacePyramide.m}
+
+\begin{figure}[h]
+\subfloat[size 512]{\includegraphics[width=0.24\textwidth]{../lena\lyxdot laplace\lyxdot pyramid\lyxdot 512}}
+\hspace{\fill}
+\subfloat[size 256]{\includegraphics[width=0.24\textwidth]{../lena\lyxdot laplace\lyxdot pyramid\lyxdot 256}}
+\hspace{\fill}
+\subfloat[size 128]{\includegraphics[width=0.24\textwidth]{../lena\lyxdot laplace\lyxdot pyramid\lyxdot 128}}
+\hspace{\fill}
+\subfloat[size 64]{\includegraphics[width=0.24\textwidth]{../lena\lyxdot laplace\lyxdot pyramid\lyxdot 64}}
+\hspace{\fill}
+\caption{Teile der Laplace-Pyramide}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Aufgabe 2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\lstinputlisting[caption=Hauptdatei a2.m]{../a2.m}
+
+\newpage
+Die Mischung der Bilder wurde wie oben stehend implementiert. Im Grunde
+genommen wird nur parallel durch die drei Bildpyramiden iteriert und
+dabei eine neue Bildpyramide aufgebaut (dabei gemäß der jeweiligen Maske
+gemischt). Die entandende Laplace-Pyramide wird dann wie schon in Aufgabe 1
+gesehen, dazu benutzt, ein Bild zu rekonstruieren. 
+Das Ergebnis ist leider nicht ganz so schön, denn es
+sind kachelartige Artefakte sichtbar. Dies liegt eventuell daran, dass die
+simple, mittelwertsbasierte Implementierung der Pyramiden gewählt wurde.
+
+\begin{figure}[h]
+\subfloat[Maske 1]{\includegraphics[width=0.24\textwidth]{../eye-mask}}
+\hspace{\fill}
+\subfloat[Mischung 1]{\includegraphics[width=0.24\textwidth]{../mixed\lyxdot 256}}
+\hspace{\fill}
+\subfloat[Maske 2]{\includegraphics[width=0.24\textwidth]{../eye-mask1}}
+\hspace{\fill}
+\subfloat[Mischung 2]{\includegraphics[width=0.24\textwidth]{../mixed\lyxdot 256\lyxdot 1}}
+\hspace{\fill}
+\caption{Erebnisse des Mischens mit Laplace-Pyramide}
+\end{figure}
+
+\end{document}
