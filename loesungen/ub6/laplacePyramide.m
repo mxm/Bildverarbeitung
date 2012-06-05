@@ -20,7 +20,7 @@ function P = laplacePyramide(B)
 	% create the thumbnail
 	thumb = shrink2x2(C);
 	% sample up again
-	reenlarged = enlarge2(thumb);
+	reenlarged = bilinear2(thumb);
 	% subtract from original image
 	L = B - reenlarged;
 	% recurse

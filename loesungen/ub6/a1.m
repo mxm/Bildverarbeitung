@@ -51,7 +51,7 @@ while(1)
 	name = sprintf("lena.reconstructed.%d.png", w);
 	printf("size: %d,%d, name: %s\n", h, w, name);
 	% compute reconstructed image
-	R = enlarge2(G) + B;
+	R = bilinear2(G) + B;
 	imwrite(uint8(R), name);
 	G = R;
 	if (!isfield(LI, "next"))

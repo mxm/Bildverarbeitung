@@ -7,8 +7,8 @@ Lhand = laplacePyramide(HAND);
 Leye = laplacePyramide(EYE);
 
 M = invert(Pmask);
-A = invert(Lhand);
-B = invert(Leye);
+B = invert(Lhand);
+A = invert(Leye);
 
 %% create mixed image's laplace pyramid
 % G
@@ -41,7 +41,7 @@ while(1)
 	[h,w] = size(B);
 	name = sprintf("mixed.%d.png", w);
 	printf("size: %d,%d, name: %s\n", h, w, name);
-	R = enlarge2(G) + B;
+	R = bilinear2(G) + B;
 	imwrite(uint8(R), name);
 	G = R;
 	if (!isfield(LI, "next"))
