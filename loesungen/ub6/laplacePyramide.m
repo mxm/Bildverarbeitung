@@ -15,7 +15,7 @@ function P = laplacePyramide(B)
 	% with gaussian blurr if possible
 	C = B;
 	if (h > 2)
-		C = falte(B, ones(5)/25);
+		C = falte(B, gauss5);
 	end;
 	% create the thumbnail
 	thumb = shrink2x2(C);

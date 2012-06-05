@@ -12,7 +12,7 @@ function P = gaussPyramide(B)
 	% first, apply gaussian blurr if possible
 	C = B;
 	if (h > 2)
-		C = falte(B, ones(5)/25);
+		C = falte(B, gauss5());
 	end;
 	% then shrink the image
 	thumb = shrink2x2(C);
