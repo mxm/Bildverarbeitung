@@ -1,0 +1,94 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,vmargin={20mm,20mm},hmargin={30mm,25mm}]{geometry}
+
+\usepackage{graphicx}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{subfig}
+
+\usepackage{color}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+\begin{document}
+
+
+\parindent 0em%
+\parskip 0.5em%
+\noindent\rule{\textwidth}{1pt}%
+\begin{center}%
+\textbf{Bildverarbeitung SoSe 2012} \\
+\textbf{Übung 7}
+\end{center}%
+{Max Michels, Sebastian Kürten}\\%
+\noindent\rule{\textwidth}{1pt}%
+
+\newcommand{\lyxdot}{.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Aufgabe 1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Aufgabe 2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Es wurde die 2D-Wavelet-Transformation mit Haar-Wavelets implementiert. Dabei
+wurde zur Implementierung das Lifting-Schema verwendet. Kern der Implementierung
+ist die Version für Hin- und Rücktransformation einer einzelnen Spalte, auf der
+die Gesamttransformation aufgebaut ist.
+
+In der Hauptdatei werden dann für die beiden Eingabebilder im Wavelet-Raum
+kleine Werte im Sinne des Absolutbetrags auf Null gesetzt. Dies geschieht in
+der Funktion 'compress'. Es wurden anteilig die kleinsten vorkommenden absoluten Werte
+im Bild auf Null gesetzt, d.h. bspw. die Angabe 0.9 bedeutet, dass 90 Prozent aller Werte
+auf Null gesetzt wurden. Unten sind die Abbildungen der auf diese Art gewonnen Bilder
+zu sehen.
+
+\lstinputlisting[caption=Hauptdatei a2.m]{../a2.m}
+\lstinputlisting[caption=Kompression]{../compress.m}
+\lstinputlisting[caption=Haar transformation with Lifting schema]{../haar.m}
+\lstinputlisting[caption=Haar for rows (based on column version)]{../haarRows.m}
+\lstinputlisting[caption=Haar for columns]{../haarCols.m}
+\lstinputlisting[caption=Haar transform for a single column]{../haarSingleCol.m}
+\lstinputlisting[caption=Inverse haar transformation]{../ihaar.m}
+\lstinputlisting[caption=Inverse haar transformation (based on columns)]{../ihaarRows.m}
+\lstinputlisting[caption=Inverse haar transformation for columns]{../ihaarCols.m}
+\lstinputlisting[caption=Inverse Haar for a single Column]{../ihaarSingleCol.m}
+
+\begin{figure}[h]
+\subfloat[0.50]{\includegraphics[width=0.19\textwidth]{../lena\lyxdot compressed\lyxdot 0\lyxdot 50}}
+\subfloat[0.60]{\includegraphics[width=0.19\textwidth]{../lena\lyxdot compressed\lyxdot 0\lyxdot 60}}
+\subfloat[0.70]{\includegraphics[width=0.19\textwidth]{../lena\lyxdot compressed\lyxdot 0\lyxdot 70}}
+\subfloat[0.80]{\includegraphics[width=0.19\textwidth]{../lena\lyxdot compressed\lyxdot 0\lyxdot 80}}
+\subfloat[0.90]{\includegraphics[width=0.19\textwidth]{../lena\lyxdot compressed\lyxdot 0\lyxdot 90}}
+\\
+\subfloat[0.95]{\includegraphics[width=0.19\textwidth]{../lena\lyxdot compressed\lyxdot 0\lyxdot 95}}
+\subfloat[0.97]{\includegraphics[width=0.19\textwidth]{../lena\lyxdot compressed\lyxdot 0\lyxdot 97}}
+\caption{lena}
+\end{figure}
+
+\begin{figure}[h]
+\subfloat[0.50]{\includegraphics[width=0.19\textwidth]{../old-lady\lyxdot compressed\lyxdot 0\lyxdot 50}}
+\subfloat[0.60]{\includegraphics[width=0.19\textwidth]{../old-lady\lyxdot compressed\lyxdot 0\lyxdot 60}}
+\subfloat[0.70]{\includegraphics[width=0.19\textwidth]{../old-lady\lyxdot compressed\lyxdot 0\lyxdot 70}}
+\subfloat[0.80]{\includegraphics[width=0.19\textwidth]{../old-lady\lyxdot compressed\lyxdot 0\lyxdot 80}}
+\subfloat[0.90]{\includegraphics[width=0.19\textwidth]{../old-lady\lyxdot compressed\lyxdot 0\lyxdot 90}}
+\\
+\subfloat[0.95]{\includegraphics[width=0.19\textwidth]{../old-lady\lyxdot compressed\lyxdot 0\lyxdot 95}}
+\subfloat[0.97]{\includegraphics[width=0.19\textwidth]{../old-lady\lyxdot compressed\lyxdot 0\lyxdot 97}}
+\caption{old-lady}
+\end{figure}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Aufgabe 3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
