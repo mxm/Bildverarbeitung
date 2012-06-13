@@ -1,0 +1,12 @@
+d = x * cos alpha + y * sin alpha
+
+imshow(I);
+
+geraden zeichnen:
+hold on
+plot(vx, vy) <-- nimmt vektoren
+hold off
+
+kreise zeichnen:
+for t = 0:0.01:2*pi
+	plot (x + r * cos(t), y + r * sin(t))
