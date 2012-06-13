@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.9.10)  11 JUN 2012 23:31
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.9.10)  13 JUN 2012 14:01
 entering extended mode
  %&-line parsing enabled.
 **doc.latex
@@ -391,11 +391,11 @@ LaTeX Font Info:    Try loading font information for TS1+pcr on input line 15.
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-)) (../compress.m) [1
+)) (../compress.m [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (../haar.m) (../haarRows.m
-)
-(../haarCols.m) (../haarSingleCol.m) (../ihaar.m) (../ihaarRows.m) [2]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (../haar.m) (../haarRows.
+m)
+(../haarCols.m) (../haarSingleCol.m) (../ihaar.m [2]) (../ihaarRows.m)
 (../ihaarCols.m) (../ihaarSingleCol.m)
 <../lena.compressed.0.50.png, id=14, 513.92pt x 513.92pt>
 File: ../lena.compressed.0.50.png Graphic file (type png)
@@ -425,6 +425,9 @@ File: ../lena.compressed.0.95.png Graphic file (type png)
 File: ../lena.compressed.0.97.png Graphic file (type png)
 
 <use ../lena.compressed.0.97.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <../old-lady.compressed.0.50.png, id=21, 256.96pt x 256.96pt>
 File: ../old-lady.compressed.0.50.png Graphic file (type png)
 
@@ -456,22 +459,22 @@ File: ../old-lady.compressed.0.97.png Graphic file (type png)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <../lena.compressed.0.50.png (PNG copy)> <../lena.compressed.0.60.png (PNG c
-opy)> <../lena.compressed.0.70.png (PNG copy)> <../lena.compressed.0.80.png (PN
-G copy)> <../lena.compressed.0.90.png (PNG copy)> <../lena.compressed.0.95.png 
-(PNG copy)> <../lena.compressed.0.97.png (PNG copy)>] [4 <../old-lady.compresse
+[3] [4 <../lena.compressed.0.50.png (PNG copy)> <../lena.compressed.0.60.png (P
+NG copy)> <../lena.compressed.0.70.png (PNG copy)> <../lena.compressed.0.80.png
+ (PNG copy)> <../lena.compressed.0.90.png (PNG copy)> <../lena.compressed.0.95.
+png (PNG copy)> <../lena.compressed.0.97.png (PNG copy)> <../old-lady.compresse
 d.0.50.png (PNG copy)> <../old-lady.compressed.0.60.png (PNG copy)> <../old-lad
 y.compressed.0.70.png (PNG copy)> <../old-lady.compressed.0.80.png (PNG copy)> 
 <../old-lady.compressed.0.90.png (PNG copy)> <../old-lady.compressed.0.95.png (
 PNG copy)> <../old-lady.compressed.0.97.png (PNG copy)>] (./doc.aux) ) 
 Here is how much of TeX's memory you used:
- 6107 strings out of 495021
- 86172 string characters out of 1181035
- 213172 words of memory out of 3000000
- 9199 multiletter control sequences out of 15000+50000
+ 6109 strings out of 495021
+ 86188 string characters out of 1181035
+ 217172 words of memory out of 3000000
+ 9201 multiletter control sequences out of 15000+50000
  8379 words of font info for 31 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 44i,10n,45p,325b,1357s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,10n,45p,325b,1666s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/sha
 re/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/
@@ -480,7 +483,7 @@ amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/tex
 mf-texlive/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-texlive/f
 onts/type1/urw/courier/ucrr8a.pfb>
-Output written on doc.pdf (4 pages, 1283498 bytes).
+Output written on doc.pdf (4 pages, 1286428 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

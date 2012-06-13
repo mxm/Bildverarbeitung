@@ -30,6 +30,12 @@
 \section{Aufgabe 1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Bildpyramiden - Wavelet: Bildpyramiden sind ein Spezialfall der Wavelettransformation.
+
+Wavelet - DFT: bei beidem werden die Bilder in einene Frequenzraum transformiert,
+der Hauptunterschied ist, dass die DFT global arbeitet und die Wavelettransformation
+vor allem auch lokale Frequenzen enthält.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Aufgabe 2
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -83,12 +89,29 @@ zu sehen.
 \caption{old-lady}
 \end{figure}
 
-\newpage
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Aufgabe 3
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Aufgabe 3}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Wir würden einen Kantenfilter auf das Bild anwenden und anschließend überprüfen,
+ob sich eine Kante an der erwarteten Stelle im Bild befindet. Da die Flaschen
+immer an der gleichen Stelle stehen ist wenn die Aufnhame des Bildes gemacht wird, 
+sollte, von kleinen Abweichungen abgesehen
+immer in etwa an der gleichen Stelle mit der Kante zu rechnen sein. Als Kantenfilter
+könnte man zum Beispiel einen Sobel-XY Filter verwenden. Um dann die Kante zu identifizieren
+könnte man prüfen ob im erwarteten Bereich eine Häufung von hellen Punkten zu finden
+ist. Dazu könnte man die Akkumulatortechnik verwenden und nach einigen Experimenten
+mit korrekt und schlecht befüllten Flaschen einen Schwellwert festlegen, der 
+zur Erkennung der Kante geeignet ist. Da es sich immer um horizontale Kanten
+handeln muss (wegen der Schwerkraft) könnte man auch einen Sobel-Y oder einen
+Laplace-Filter verwenden.
+
+Alternativ könnte man auch eine Hough-Transformation anwenden um die Kanten zu
+identifizieren. Auch hier würde sich nach einigen Experimenten ein recht enger
+Bereich identifizieren in dem sich im Akkumulatorbild die Häufungspunkte befinden müssten.
+Eventuell könnte man auch hier das Verfahren verbessern, indem lediglich auf
+horizontale Kanten getestet würde.
 
 \end{document}
