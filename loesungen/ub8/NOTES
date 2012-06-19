@@ -8,5 +8,6 @@ plot(vx, vy) <-- nimmt vektoren
 hold off
 
 kreise zeichnen:
-for t = 0:0.01:2*pi
-	plot (x + r * cos(t), y + r * sin(t))
+r = 100;
+for t = 0:0.1:2*pi
+	plot (x + r * cos(t), y + r * sin(t));
