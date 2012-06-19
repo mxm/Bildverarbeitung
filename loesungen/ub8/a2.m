@@ -1,12 +1,12 @@
 B = imread("lanes-bw.png");
 I = imread("lanes-bw-canny.png");
-%I = imread("test.png");
 
-alphasteps = 256;
+% discretetize angle with 'alphasteps' steps
 alphasteps = 512;
+% perform hough transformation
 O = hough(I, alphasteps);
 
-% create an image
+% create an image of the result
 O1 = O;
 O1(find(O1 > 255)) = 255; % cut off too big values
 imwrite(uint8(255-O1), "lanes-hough.png");
@@ -14,16 +14,18 @@ imwrite(uint8(255-O1), "lanes-hough.png");
 % supress non maxima
 O2 = nms(O);
 
-% create another image
+% create another image of the local maxima
 O3 = O2;
 O3(find(O3 > 255)) = 255; % cut off too big values
 imwrite(uint8(255-O3), "lanes-hough-nms.png");
 
-% find maxima
+% find global maxima with thresholding
+[ds,alphas] = find(O2 > 80);
+
+% draw lines on the original image
 imshow(B);
 hold on;
 [h,w] = size(B);
-[ds,alphas] = find(O2 > 80);
 alphas = alphas / alphasteps * pi;
 ys = ds./sin(alphas);
 yws = (ds-w*cos(alphas))./sin(alphas);
@@ -34,4 +36,4 @@ for k = 1:n
 	y = [ys(k) yws(k)];
 	plot(x, y);
 end;
-print("foo.png");
+print("lanes-bw-result-own.png");

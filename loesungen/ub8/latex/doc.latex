@@ -1,0 +1,107 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,vmargin={20mm,20mm},hmargin={30mm,25mm}]{geometry}
+
+\usepackage{graphicx}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{subfig}
+
+\usepackage{color}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+\begin{document}
+
+
+\parindent 0em%
+\parskip 0.5em%
+\noindent\rule{\textwidth}{1pt}%
+\begin{center}%
+\textbf{Bildverarbeitung SoSe 2012} \\
+\textbf{Übung 8}
+\end{center}%
+{Max Michels, Sebastian Kürten}\\%
+\noindent\rule{\textwidth}{1pt}%
+
+\newcommand{\lyxdot}{.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Aufgabe 1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Der Canny-Kantenerkennungsalgorithmus arbeitet in etwa folgendermaßen:
+
+\begin{itemize}
+\item Anwenden eines Gauß-Weichzeichners mittels Konvolution. Dabei tritt
+einer der Konfigurationsparameter auf, nämlich die Größe des Gauss-Filters.
+\item Dann werden mit verschiedenen Verfahren Gradienten ermittelt um 
+Kanten in verschiedenen Ausrichtungen zu verstärken.
+\item Es werden lokale Nicht-Maxima verworfen
+\item Auf Basis zweier Schwellwerte werden alle Pixel als Kante, nicht-Kante
+oder zwischen-Kanten klassifiziert.
+\item Alle zwischen-Kanten Pixel werden erneut überprüft, ob diese an Kantenpixel
+grenzen, und im diesem Fall zu Kantenpixeln umklassifiziert.
+\end{itemize}
+
+Wir haben zufällig Konfigurationsparameter für $t$ und $\sigma$ durchprobiert,
+bis sinnvolle Ergebnis erreicht wurden. Jedoch konnte keine mit der Musterlösung
+vergleichbare Konfiguration gefunden werden, die genauso glatte Kanten produziert.
+Als geeignete Parameter wurden, z.B. $t = [2, 9]$ und $\sigma = 0.3$ identifiziert.
+Scheinbar sind die Ergebnisse aber auch von der verwendeten Octave-Version abhängig.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{../lanes-bw-canny-own-inv}
+\caption{Canny Kantenerkennung (invertiert)}
+\end{figure}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Aufgabe 2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Die Hough-Transformation wurde wie folgt implementiert. Sie erhält als Parameter ein
+Eingabebild und die Anzahl an Werten in die der Winkel diskretisiert werden soll. Hier ist
+zum Beispiel 512 zu wählen. Der Koordinatenursprung wurde an der linken oberen Ecke des 
+Bildes belassen. (Wir haben ihn auch mal testweise in die Mitte des Bildes verschoben)
+
+\lstinputlisting[caption=Hough-Transformation]{../hough.m}
+
+Die Hauptdatei 'a2.m' berechnet für das Eingabebild die Hough-Transformation,
+entfernt daraus alle lokalen Nicht-Minima, wählt dann aus dem Akkumulatorbild
+alle Punkte, die den Schwellwert 80 überschreiten aus und zeichnet die Geraden,
+die durch die entsprechenden Werte $d$ und $\alpha$ an der jeweiligen Stelle 
+gegeben sind in das ursrprüngliche Bild ein. Zwischendurch werden Bilder produziert.
+
+\lstinputlisting[caption=Hauptdatei a2.m]{../a2.m}
+
+\lstinputlisting[caption=Non-maxima supression nms.m]{../nms.m}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1.0\textwidth]{../lanes-bw-result-own}
+\caption{Originalbild mit eingezeichneten Geraden}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{../lanes-hough}
+\caption{Hough-Raum bei Koordinatenursprung oben links}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{../lanes-hough-m}
+\caption{Hough-Raum bei Koordinatenursprung mitte}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Aufgabe 3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
