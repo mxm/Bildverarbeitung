@@ -23,7 +23,7 @@ imwrite(uint8(255-O3), "lanes-hough-nms.png");
 imshow(B);
 hold on;
 [h,w] = size(B);
-[ds,alphas] = find(O2 > 80)
+[ds,alphas] = find(O2 > 80);
 alphas = alphas / alphasteps * pi;
 ys = ds./sin(alphas);
 yws = (ds-w*cos(alphas))./sin(alphas);
