@@ -1,0 +1,135 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper,vmargin={20mm,20mm},hmargin={30mm,25mm}]{geometry}
+
+\usepackage{graphicx}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{subfig}
+
+\usepackage{color}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+\begin{document}
+
+
+\parindent 0em%
+\parskip 0.5em%
+\noindent\rule{\textwidth}{1pt}%
+\begin{center}%
+\textbf{Bildverarbeitung SoSe 2012} \\
+\textbf{Übung 8}
+\end{center}%
+{Max Michels, Sebastian Kürten}\\%
+\noindent\rule{\textwidth}{1pt}%
+
+\newcommand{\lyxdot}{.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Aufgabe 1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+siehe letztes Blatt
+
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=0.7\textwidth]{../lanes-bw-canny-own-inv}
+%\caption{Canny Kantenerkennung (invertiert)}
+%\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Aufgabe 2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Teil a}
+
+Die Hauptdatei von Aufgabe 2a führt die Operationen Erosion, Dilation,
+Opening und Closing auf dem Binärbild "`rhino-part-bin.png"' aus und speichert die
+Ergebnisse in Dateien ab. Es wird jeweils ein kreuzförmiges 3x3-Strukturelement 
+verwendet. Da dieses Strukturelement symmetrisch ist, musste es nicht
+transponiert werden.
+
+\lstinputlisting[caption=Hauptdatei a2a.m]{../a2a.m}
+
+Erosion und Dilation wurden wie folgt implementiert.
+
+\lstinputlisting[caption=Erosion]{../erosion.m}
+\lstinputlisting[caption=Dilation]{../dilation.m}
+
+Opening und Closing sind eine einfache hintereinanderausführung von 
+Erosion und Dilation bzw. umgekehrt.
+
+\lstinputlisting[caption=Opening]{../opening.m}
+\lstinputlisting[caption=Closing]{../closing.m}
+
+\subsection{Teile b und c}
+
+Für die Aufgabenteile b und c wurden die unten stehenden Bilder erzeugt
+und dann mit dem folgenden Programm wiederhergestellt.
+
+\lstinputlisting[caption=Hauptdatei a2bc.m]{../a2bc.m}
+
+Es wurde wiederum das 3x3 Kreuz als Strukturelement verwendet und die 
+Linien wurden mittels Closing bzw. Opening entfernt.
+
+\begin{figure}[h]
+%\subfloat[mit weißen Linien]{\includegraphics[width=0.48\textwidth]{../rhino-part-bin-with-white-lines}}
+\subfloat[mit weißen Linien]{\includegraphics[width=0.48\textwidth]{../text-with-white-lines}}
+\hspace{\fill}
+%\subfloat[mit schwarzen Linien]{\includegraphics[width=0.48\textwidth]{../rhino-part-bin-with-black-lines}}
+\subfloat[mit schwarzen Linien]{\includegraphics[width=0.48\textwidth]{../text-with-black-lines}}
+\caption{modifizierte Bilder (die weißen Linien sind an den gleichen Stellen wie die schwarzen)}
+\end{figure}
+
+\begin{figure}[h]
+%\subfloat[mit weißen Linien]{\includegraphics[width=0.48\textwidth]{../rhino-part-white-restored}}
+\subfloat[mit weißen Linien]{\includegraphics[width=0.48\textwidth]{../text-white-restored}}
+\hspace{\fill}
+%\subfloat[mit schwarzen Linien]{\includegraphics[width=0.48\textwidth]{../rhino-part-black-restored}}
+\subfloat[mit schwarzen Linien]{\includegraphics[width=0.48\textwidth]{../text-black-restored}}
+\caption{wiederhergestellte Bilder}
+\end{figure}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aufgabe 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Aufgabe 3}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Teil a}
+
+Alle Operationen wurden hier analog zu Aufgabe 2 implementiert. Lediglich die 
+Zeilen 9 und 10 mussten in der Erosion bzw. Dilation angepasst werden.
+In der Hauptdatei werden die vier Operationen auf "`lena-bw.png"' ausgeführt und
+abgespeichert. Die Ergebnisse sind weiter unten zu sehen.
+
+\lstinputlisting[caption=Hauptdatei a3.m]{../a3.m}
+\lstinputlisting[caption=Grauwert Erosion]{../gs_erosion.m}
+\lstinputlisting[caption=Grauwert Dilation]{../gs_dilation.m}
+
+Opening und Closing sind eine einfache hintereinanderausführung von 
+Erosion und Dilation bzw. umgekehrt.
+
+\lstinputlisting[caption=Grauwert Opening]{../gs_opening.m}
+\lstinputlisting[caption=Grauwert Closing]{../gs_closing.m}
+
+\begin{figure}[h]
+\subfloat[Erosion]{\includegraphics[width=0.48\textwidth]{../lena-bw-erosion}}
+\hspace{\fill}
+\subfloat[Dilation]{\includegraphics[width=0.48\textwidth]{../lena-bw-dilation}}
+\caption{Grauwert-Bilderoperationen}
+\end{figure}
+
+\begin{figure}[h]
+\subfloat[Opening]{\includegraphics[width=0.48\textwidth]{../lena-bw-opening}}
+\hspace{\fill}
+\subfloat[Closing]{\includegraphics[width=0.48\textwidth]{../lena-bw-closing}}
+\caption{Grauwert-Bilderoperationen}
+\end{figure}
+
+\end{document}
